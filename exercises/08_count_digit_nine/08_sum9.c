@@ -15,17 +15,19 @@
  * 验证：stdout 精确匹配 "sum = 20\n"
  */
 
-#include <stdio.h>
+int find(int num, int digit) 
+//#error TODO: Fix this exercise. Run "clings hint" for help.
+{
+   int counter=0;
+    do
+   {
+    int a=num%10;
+    num=num/10;
+      if(a%digit==0&&a!=0)
+      {counter++;}
 
-/*
- * find - calculate how many digit in num
- * @num:	the number we want to find
- * @digit:	the digit we search in num
- *
- * Return value:  how many digit in this num
- */
-int find(int num, int digit) {
-#error TODO: Fix this exercise. Run "clings hint" for help.
+   }while(num!=0);
+    return counter;
 }
 
 int main(void) {

@@ -13,4 +13,12 @@
  * 验证：stdout 精确匹配 "hello, world.\n"
  */
 
-#error TODO: Fix this exercise. Run "clings hint" for help.
+//#error TODO: Fix this exercise. Run "clings hint" for help.
+#include <stdio.h>
+int main()
+{
+   printf("hello, world.\n");
+   return 0;
+
+
+} 

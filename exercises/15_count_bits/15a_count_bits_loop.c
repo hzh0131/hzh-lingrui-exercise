@@ -16,14 +16,21 @@
 int count_bits(int num) {
     int sum = 0;
     int i;
+    for(i=0;i<32;i++)
+    {
+        if(num&(1<<i))
+        sum++;
+    }
 
-#error TODO: Fix this exercise. Run "clings hint" for help.
+
+
+//#error TODO: Fix this exercise. Run "clings hint" for help.
     return sum;
 }
 
 int main(void) {
     int num;
-
+    printf("please input a number\n");
     scanf("%d", &num);
     printf("%d\n", count_bits(num));
 
